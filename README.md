@@ -1,7 +1,7 @@
 # LLMs, RAG & AI-Agenten in Python — Kurs: README (DE)
 
 **Willkommen zum Kurs „LLMs, RAG & AI-Agenten in Python“ von AI & Data Solutions.**  
-Dieser Kurs enthält Videolektionen, interaktive Jupyter-Notebooks und praktische Code-Beispiele.
+Dieser Kurs enthält interaktive Jupyter-Notebooks und praktische Code-Beispiele.
 
 ---
 
@@ -10,18 +10,14 @@ Struktur (Beispiel):
 
 LLMs-RAG-AI-Agents-Kurs/
 ├── 01_Einfuehrung/
-│ ├── video_01_willkommen.mp4
 │ └── notebooks/01_intro_llms.ipynb
 ├── 02_LLMs_Grundlagen/
-│ ├── video_02_openai_api.mp4
 │ ├── notebooks/02_openai_basics.ipynb
 │ └── code/llm_prompts.py
 ├── 03_RAG/
-│ ├── video_03_rag_overview.mp4
 │ ├── notebooks/03_faiss_demo.ipynb
 │ └── code/rag_example.py
 ├── 04_AI_Agenten/
-│ ├── video_04_agents.mp4
 │ ├── notebooks/04_agent_demo.ipynb
 │ └── code/agent_demo.py
 ├── 05_Abschlussprojekt/
@@ -29,39 +25,25 @@ LLMs-RAG-AI-Agents-Kurs/
 ├── requirements.txt
 └── README.de.md
 
-yaml
-Code kopieren
-
----
-
 ## Voraussetzungen
 - Grundkenntnisse in Python (Variablen, Funktionen, Pakete, einfache Datenmanipulation mit Pandas empfohlen)
 - Optional: Grundverständnis von Machine Learning / Modellen
 - Empfohlen: Python 3.8+ und ein moderner Editor (VS Code / JupyterLab)
 
----
-
 ## Installation (lokal)
 1. Repository/Ordner herunterladen.
 2. Virtuelle Umgebung erstellen:
-   ```bash
    python -m venv venv
    source venv/bin/activate    # macOS/Linux
    venv\Scripts\activate       # Windows
 Abhängigkeiten installieren:
 
-bash
-Code kopieren
 pip install -r requirements.txt
 Jupyter starten:
 
-bash
-Code kopieren
 jupyter lab
 oder
 
-bash
-Code kopieren
 jupyter notebook
 Verwendung in Google Colab (ohne lokale Installation)
 Öffne das gewünschte Notebook (.ipynb) in GitHub → Open in Colab (oder lade das Notebook in Colab hoch).
@@ -75,8 +57,6 @@ notebooks/ — interaktive Übungen (Schritt für Schritt)
 
 code/ — eigenständige Python-Scripte (z. B. rag_example.py, agent_demo.py)
 
-videos/ oder *.mp4 — Lektionen (falls lokal bereitgestellt). Videos können alternativ per Link bereitgestellt werden.
-
 API-Keys & Sicherheit
 Einige Notebooks nutzen APIs (z. B. OpenAI). Lege sensiblen Schlüssel in einer .env oder in Colab-Variablen ab:
 
@@ -86,7 +66,6 @@ OPENAI_API_KEY=sk-...
 Niemals API-Keys in öffentlichen Repositories committen.
 
 Empfohlener Workflow
-Schau das Video zur Lektion.
 
 Starte das zugehörige Notebook (lokal oder Colab).
 
