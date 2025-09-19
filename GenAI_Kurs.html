@@ -1,207 +1,88 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Online-Kurs: LLMs, RAG & AI-Agenten mit Python | AI & Data Solutions</title>
+# Einführung in LLMs, RAG und AI-Agenten
 
-  <!-- SEO -->
-  <meta name="description" content="Praxisintensiver Online-Kurs: LLMs, Retrieval-Augmented Generation (RAG) & AI-Agenten in Python. Videos, Jupyter-Notebooks & Code-Beispiele." />
-  <meta name="keywords" content="LLM Kurs, RAG, AI-Agenten, LangChain, Python, Vektordatenbank, FAISS, Chroma, Data Science, Generative AI" />
-  <meta name="author" content="AI & Data Solutions" />
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
+![License](https://img.shields.io/badge/Lizenz-Alle%20Rechte%20vorbehalten-red)
+![Status](https://img.shields.io/badge/Status-In Arbeit-orange)
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Online-Kurs: LLMs, RAG & AI-Agenten mit Python" />
-  <meta property="og:description" content="Praxisintensiver Kurs mit Videolektionen, Jupyter-Notebooks und Code-Beispielen. Kein Zertifikat, voller Fokus auf praktischer Anwendbarkeit." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://ideal-computing-machine-qoun2z31p-sidi-weiss-projects.vercel.app/kurs.html" />
-  <!-- og:image weglassen oder auf Projektlogo verweisen, wenn vorhanden -->
+Willkommen zum Kurs **"Einführung in LLMs, RAG und AI-Agenten"**!  
+In diesem Kurs lernst du die Grundlagen von Large Language Models (LLMs), Retrieval-Augmented Generation (RAG) und die Entwicklung sowie Nutzung von AI-Agenten. Der Kurs richtet sich an alle, die ein tieferes Verständnis moderner KI-Technologien erlangen möchten.
 
-  <!-- Styles (Tailwind + kleine Customizations) -->
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <style>
-    :root{
-      --primary:#4F46E5;   /* Indigo */
-      --primary-2:#6366F1;
-      --accent:#F59E0B;    /* gelb/orange für CTA */
-      --bg:#F9FAFB;
-      --text:#1F2937;
-    }
-    html{scroll-behavior:smooth}
-    body{background:var(--bg); color:var(--text);}
-    a.cta{background:var(--accent); color:#111827;}
-    a.cta:hover{background:#FBBF24}
-    header{background:var(--text);} /* dunkel */
-  </style>
-</head>
-<body class="leading-relaxed">
+---
 
-  <!-- Navigation -->
-  <header class="text-white fixed w-full z-50">
-    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-      <a href="/" class="text-xl font-bold" style="color:var(--primary)">AI & Data Solutions</a>
-      <nav class="hidden md:flex space-x-6 items-center">
-        <a href="#about" class="hover:text-yellow-400">Über den Kurs</a>
-        <a href="#modules" class="hover:text-yellow-400">Module</a>
-        <a href="#pricing" class="hover:text-yellow-400">Preis</a>
-        <a href="#contact" class="hover:text-yellow-400">Kontakt</a>
-        <a href="#impressum" class="hover:text-yellow-400">Impressum</a>
-      </nav>
-    </div>
-  </header>
+## Inhaltsverzeichnis
 
-  <!-- Hero -->
-  <section class="flex items-center justify-center text-center" style="height:75vh; background:linear-gradient(90deg,var(--primary),var(--primary-2)); color:white;">
-    <div class="px-6">
-      <h1 class="text-4xl md:text-5xl font-bold mb-4">💡 Online-Kurs: LLMs, RAG & AI-Agenten mit Python</h1>
-      <p class="text-lg md:text-xl mb-6 max-w-3xl mx-auto">Praxisnaher Intensivkurs: Videos, Jupyter-Notebooks & Code-Beispiele — keine Zertifikate, nur praxisrelevantes Handwerkszeug.</p>
-      <a href="#pricing" class="cta font-semibold px-6 py-3 rounded-lg shadow">Jetzt buchen — 249 €</a>
-    </div>
-  </section>
+- [Kursinhalte](#kursinhalte)
+- [Voraussetzungen](#voraussetzungen)
+- [Installation / Setup](#installation--setup)
+- [Ressourcen](#ressourcen)
+- [Autor / Kontakt](#autor--kontakt)
+- [Lizenz](#lizenz)
 
-  <!-- Über den Kurs -->
-  <section id="about" class="py-16 bg-white">
-    <div class="max-w-4xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold" style="color:var(--primary)">Über den Kurs</h2>
-      <p class="mt-4 text-gray-700">
-        In diesem Kurs lernst du praktisch, wie Large Language Models (LLMs) eingesetzt werden, wie eine RAG-Pipeline (Retrieval-Augmented Generation)
-        aufgebaut wird und wie du eigene AI-Agenten in Python entwickelst (z. B. mit LangChain / LlamaIndex). Der Fokus liegt auf umsetzbaren Projekten, die
-        du selbst ausführen und erweitern kannst.
-      </p>
+---
 
-      <ul class="mt-6 text-left mx-auto max-w-2xl space-y-2 text-gray-700 list-disc">
-        <li>Praxisorientierte Lektionen: inkl. Code-Demos und Hands-On Notebooks</li>
-        <li>Für Teilnehmer mit Grundkenntnissen in Python (Pandas, Grundverständnis von APIs)</li>
-        <li>Keine Zertifikate — Fokus: Einsatzfähige Skills & reproduzierbare Projekte</li>
-      </ul>
-    </div>
-  </section>
+## Kursinhalte
 
-  <!-- Module -->
-  <section id="modules" class="py-16">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center mb-10" style="color:var(--primary)">Kursmodule</h2>
+Der Kurs deckt folgende Themen ab:
 
-      <div class="grid gap-8 md:grid-cols-3">
-        <!-- Modul 1 -->
-        <div class="bg-white p-6 rounded-2xl shadow">
-          <h3 class="font-semibold text-xl mb-3">📘 Modul 1 — LLMs</h3>
-          <ul class="list-disc list-inside text-gray-700">
-            <li>Transformer-Grundlagen kurz erklärt</li>
-            <li>OpenAI & Hugging Face: APIs praktisch verwenden</li>
-            <li>Prompt-Engineering: Methoden & Beispiele</li>
-          </ul>
-        </div>
+1. **Grundlagen von Large Language Models (LLMs)**  
+   - Funktionsweise von LLMs  
+   - Training, Feinabstimmung und Prompt Engineering  
+   - Praxisbeispiele  
 
-        <!-- Modul 2 -->
-        <div class="bg-white p-6 rounded-2xl shadow">
-          <h3 class="font-semibold text-xl mb-3">🔎 Modul 2 — RAG</h3>
-          <ul class="list-disc list-inside text-gray-700">
-            <li>Vektordatenbanken: FAISS, Chroma (Grundaufbau)</li>
-            <li>Dokumenten-Ingestion, Chunking, Embeddings</li>
-            <li>End-to-End RAG-Pipeline mit LLM</li>
-          </ul>
-        </div>
+2. **Retrieval-Augmented Generation (RAG)**  
+   - Konzept und Funktionsweise von RAG  
+   - Datenintegration und Wissensdatenbanken  
+   - Praxisbeispiele: Dokumentensuche, QA-Systeme  
 
-        <!-- Modul 3 -->
-        <div class="bg-white p-6 rounded-2xl shadow">
-          <h3 class="font-semibold text-xl mb-3">🤖 Modul 3 — AI-Agenten</h3>
-          <ul class="list-disc list-inside text-gray-700">
-            <li>Agent-Architektur (Tools, Memory, Planning)</li>
-            <li>LangChain / LlamaIndex: Agenten bauen</li>
-            <li>Praxisprojekt: kleiner KI-Assistent</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+3. **AI-Agenten**  
+   - Aufbau und Architektur von AI-Agenten  
+   - Automatisierung von Aufgaben  
+   - Multi-Agenten-Systeme  
 
-  <!-- Kurs-Inhalte & Struktur (Kurz) -->
-  <section class="py-12 bg-gray-50">
-    <div class="max-w-6xl mx-auto px-6">
-      <h3 class="text-2xl font-bold mb-4" style="color:var(--primary)">Was du bekommst</h3>
-      <ul class="list-disc list-inside text-gray-700 space-y-2">
-        <li>Mehrere Video-Lektionen (MP4) pro Modul</li>
-        <li>Interaktive Jupyter-Notebooks zur Ausführung in Colab oder lokal</li>
-        <li>Fertige Code-Beispiele (Python-Skripte) zum Download</li>
-        <li>requirements.txt mit allen benötigten Bibliotheken</li>
-      </ul>
-    </div>
-  </section>
+4. **Praktische Übungen**  
+   - Implementierung einfacher LLM-Anwendungen  
+   - Aufbau eines RAG-Systems  
+   - Entwicklung und Test eines AI-Agenten  
 
-  <!-- Pricing -->
-  <section id="pricing" class="py-16" style="background:linear-gradient(90deg,#7C3AED,#4F46E5); color:white;">
-    <div class="max-w-4xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold mb-4">Teilnahmegebühr</h2>
-      <p class="text-xl mb-6">Einmalig <span class="font-extrabold text-yellow-300">249 €</span> — Zugang zu Videos, Notebooks & Code</p>
-      <a href="#contact" class="cta font-semibold px-6 py-3 rounded-lg shadow">Kurs buchen</a>
-      <p class="mt-6 text-sm text-gray-100">Hinweis: kein Zertifikat — praxisorientierter Kurs für direkt nutzbare Skills.</p>
-    </div>
-  </section>
+---
 
-  <!-- Kontaktformular (Formspree) -->
-  <section id="contact" class="py-16 bg-white">
-    <div class="max-w-3xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center mb-6" style="color:var(--primary)">Kontakt & Anmeldung</h2>
+## Voraussetzungen
 
-      <form action="https://formspree.io/f/xeolryra" method="POST" class="bg-gray-100 p-8 rounded-2xl shadow">
-        <div class="mb-4">
-          <label class="block mb-2 font-medium text-gray-700">Name</label>
-          <input name="name" required class="w-full px-4 py-2 rounded border" />
-        </div>
+- Grundkenntnisse in Python  
+- Grundverständnis von Machine Learning / KI  
+- Optional: Erfahrung mit APIs und Cloud-Services (z. B. OpenAI, Hugging Face)  
 
-        <div class="mb-4">
-          <label class="block mb-2 font-medium text-gray-700">E-Mail</label>
-          <input type="email" name="email" required class="w-full px-4 py-2 rounded border" />
-        </div>
+---
 
-        <div class="mb-4">
-          <label class="block mb-2 font-medium text-gray-700">Nachricht (z. B. gewünschter Starttermin oder Fragen)</label>
-          <textarea name="message" rows="5" required class="w-full px-4 py-2 rounded border"></textarea>
-        </div>
+## Installation / Setup
 
-        <!-- versteckte Felder (optional) -->
-        <input type="hidden" name="subject" value="Anmeldung Kurs: LLMs, RAG & AI-Agenten" />
+1. **Python 3.9+ installieren**  
+2. Virtuelle Umgebung erstellen:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # Linux/Mac
+   venv\Scripts\activate     # Windows
+Benötigte Bibliotheken installieren:
 
-        <div class="text-center">
-          <button type="submit" class="px-6 py-3 rounded-lg font-semibold" style="background:var(--primary-2); color:white;">Senden</button>
-        </div>
-      </form>
+bash
+Code kopieren
+pip install -r requirements.txt
+Ressourcen
+OpenAI API
 
-      <p class="mt-4 text-center text-gray-600 text-sm">Wir melden uns innerhalb von 2 Werktagen mit Zahlungsinformation und Zugangsdaten.</p>
-    </div>
-  </section>
+Hugging Face Transformers
 
-  <!-- Impressum -->
-  <section id="impressum" class="py-12 bg-gray-50">
-    <div class="max-w-4xl mx-auto px-6 text-gray-700">
-      <h3 class="text-2xl font-bold mb-4">Impressum</h3>
-      <p>
-        AI & Data Solutions<br>
-        Obere Waiblinger Str. 147a<br>
-        70374 Stuttgart<br>
-        Deutschland<br>
-        Telefon: +49 176/31591931<br>
-        E-Mail: <a href="mailto:estaghvirou.b@gmail.com">estaghvirou.b@gmail.com</a>
-      </p>
-    </div>
-  </section>
+LangChain Dokumentation
 
-  <!-- Datenschutz -->
-  <section id="datenschutz" class="py-12 bg-white">
-    <div class="max-w-4xl mx-auto px-6 text-gray-700">
-      <h3 class="text-2xl font-bold mb-4">Datenschutzerklärung</h3>
-      <p>
-        Der Schutz Ihrer persönlichen Daten ist uns wichtig. Personenbezogene Daten werden vertraulich und gemäß der gesetzlichen Datenschutzvorschriften behandelt.
-        Die Website verwendet keine Tracking-Cookies. Daten aus dem Kontaktformular werden ausschließlich zur Bearbeitung Ihrer Anfrage verwendet.
-      </p>
-    </div>
-  </section>
+Fachliteratur zu LLMs, RAG und Agenten
 
-  <!-- Footer -->
-  <footer class="py-6 text-center" style="background:var(--text); color:white;">
-    <p>&copy; 2025 AI & Data Solutions</p>
-  </footer>
+Autor / Kontakt
+Dr. Sidi Ould-Weiss
+Email: estaghvirou.b@gmail.com
+Telefon: 0176/31591931
 
-</body>
-</html>
+Lizenz
+Dieses Lernmaterial darf nur mit ausdrücklicher Genehmigung des Autors genutzt werden.
+
+markdown
+Code kopieren
